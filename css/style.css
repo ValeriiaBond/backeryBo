@@ -1,0 +1,170 @@
+@import url(reset.css);
+
+/*шрифты
+font-family: 'Kaushan Script', cursive;
+font-family: 'Nunito', sans-serif;
+*/
+
+body{
+	font-family: 'Nunito', sans-serif;
+}
+
+.container{
+	width: 1118px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------навигация------------------*/
+
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 65px;
+	position: relative;
+	z-index: 5;
+}
+
+
+.logo{
+	font-family: 'Kaushan Script', cursive;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 48px;
+	text-align: left;
+	letter-spacing: 0.9px;
+}
+
+.menu{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.menu>li{
+	margin-right: 40px;
+}
+
+.menu>li.active{
+	border-bottom: 2px solid #fff;
+}
+
+.menu>li>a{
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+/*-------------вступление-------------------*/
+
+.intro{
+	min-height: 555px;
+	background: url(../images/backgrounds/bg_bread_image.jpg);
+	padding-top: 115px;
+	margin-top: -115px;
+	text-align: center;
+	position: relative;
+}
+
+.intro:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.5);
+}
+
+.intro__content{
+	position: relative;
+	z-index: 5;	
+}
+
+.intro__description{
+	padding-top: 105px;
+	color: #fff;
+
+}
+
+.intro__description>h2{
+	font-size: 48px;
+	letter-spacing: 1.2px;
+	line-height: 60px;
+}
+
+.intro__description>h2>span{
+	vertical-align: super;
+	font-size: 36px;
+}
+
+.intro__description>h2+p{
+	font-size: 44px;
+	letter-spacing: 1px;
+}
+
+
+.intro__description>h2+p+p{
+	padding-top: 47px;
+	font-size: 18px;
+	line-height: 36px;
+	letter-spacing: 0.45px;
+}
+
+.intro__description>h2+p+p+p{
+	font-size: 18px;
+	line-height: 36px;
+	letter-spacing: 0.45px;
+}
+
+
+.intro__btn-group{
+	padding-top: 45px;
+	font-size: 0;
+}
+
+.intro__btn{
+	font-size: 14px;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	border: 2px solid #fff;
+	color: #fff;
+	padding-top: 10px;
+	margin: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
