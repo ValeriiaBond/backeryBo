@@ -5,12 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BackeryBo</title>
 	<link rel="stylesheet" href="css/style.css">
-	<style>
-	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-	</style>
-	<style>
-	@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-	</style>
+	<link rel="stylesheet" href="owl_carousel/owl.carousel.min.css">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');</style>
+	<style>@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="owl_carousel/owl.carousel.min.js"></script>
 </head>
 <body>
 	<nav>
@@ -54,6 +53,68 @@
 				</div>
 			</div>
 		</section>
+		<section class="bread-line">
+			<div class="container bread-line__body">
+				<h3>Whole wheat bread line</h3>
+				<div class="owl-carousel bread-line__carousel">
+				    <div class="bread-line__item item">
+				    	<img src="images/products/bread-line-item_1.jpg" alt="Whole Wheat Round">
+				    	<h4>Whole Wheat Round</h4>
+				    	<p class="bread-line__features">270 g | 218 kcal</p>
+				    	<p class="bread-line__price">$3.79</p>
+				    </div>
+				    <div class="bread-line__item item">
+				    	<img src="images/products/bread-line-item_2.jpg" alt="Whole Wheat Round">
+				    	<h4>Whole Wheat Square</h4>
+				    	<p class="bread-line__features">150 g | 211 kcal</p>
+				    	<p class="bread-line__price">$2.19</p>
+				    </div>
+				    <div class="bread-line__item item">
+				    	<img src="images/products/bread-line-item_3.jpg" alt="Whole Wheat Round">
+				    	<h4>Whole Wheat Multigrain</h4>
+				    	<p class="bread-line__features">270 g | 242 kcal</p>
+				    	<p class="bread-line__price">$4.19</p>
+				    </div>
+				    <div class="bread-line__item item">
+				    	<img src="images/products/bread-line-item_4.jpg" alt="Whole Wheat Round">
+				    	<h4>Breakfast Raisin Square</h4>
+				    	<p class="bread-line__features">180 g | 239 kcal</p>
+				    	<p class="bread-line__price">$3.79</p>
+				    </div>
+				    <div class="bread-line__item item">
+				    	<img src="images/products/bread-line-item_1.jpg" alt="Whole Wheat Round">
+				    	<h4>Whole Wheat Round</h4>
+				    	<p class="bread-line__features">270 g | 218 kcal</p>
+				    	<p class="bread-line__price">$3.79</p>
+				    </div>
+				</div>
+				<p>Haven’t tried BakeryBo whole wheat bread yet?</p>
+				<p>Get a “Buy 1 get 1 free” coupon and receive 2 loaves for the price of 1.</p>
+				<div class="intro__btn-group">
+					<a href="#" class="intro__btn">Where to buy</a>
+					<a href="#" class="intro__btn">Get a coupon</a>
+				</div>
+			</div>
+		</section>
 	</main>
+	<script>
+		$('.bread-line__carousel').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    nav:true,
+	    navText:['<span class="arrow-owl arrow-previous"></span>','<span class="arrow-owl arrow-next"></span>'],
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:3
+	        },
+	        1000:{
+	            items:4
+	        }
+	    }
+	})
+	</script>
 </body>
 </html>
