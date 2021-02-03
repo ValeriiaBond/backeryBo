@@ -42,7 +42,11 @@ a{
 
 
 
-.arrow-previous, .arrow-next{
+.arrow-previous, 
+.arrow-next,
+.brands:before,
+.btn-next-section{
+    content: '';
 	background: url(../images/icons/css_sprites.png);
 }
 
@@ -91,12 +95,13 @@ a{
 /*-------------вступление-------------------*/
 
 .intro{
-	min-height: 555px;
-	background: url(../images/backgrounds/bg_bread_image.jpg);
+	background: url(../images/backgrounds/bg_bread_image.jpg) no-repeat;
+    background-size: cover;
 	padding-top: 115px;
 	margin-top: -115px;
 	text-align: center;
 	position: relative;
+    padding-bottom: 31px;
 }
 
 .intro:before{
@@ -170,13 +175,10 @@ a{
 }
 
 .btn-next-section{
-	display: block;
-	margin: 0 auto;
-	width: 20px;
-	height: 20px;
-	border-left: 3px solid #fff;
-	border-bottom: 3px solid #fff;
-	transform: rotate(-45deg);
+    display: block;
+    width: 40px; height: 21px;
+    background-position: -46px -28px;
+    margin: 0 auto;
 }
 
 
@@ -184,7 +186,8 @@ a{
 
 .what-inside{
 	min-height: 580px;
-	background: url(../images/backgrounds/bg_white_paper.jpg);
+	background: url(../images/backgrounds/bg_white_paper.jpg) no-repeat;
+    background-size: cover;
 	padding-top: 62px;
 }
 
@@ -308,5 +311,94 @@ button.owl-dot.active:focus{
 	border-color: #000;
 	text-align: center;
 }
+
+/*----------------раздел where to buy------------------*/
+
+.where-to-buy {
+    padding-top: 63px;
+    padding-bottom: 57px;
+    background: url(../images/backgrounds/bg_dough.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.where-to-buy:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.5);
+}
+
+.where-to-buy__body{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+.where-to-buy .container {
+}
+.where-to-buy h3 {
+    padding-bottom: 31px;
+}
+.where-to-buy p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.where-to-buy__body>p+p{
+    padding-bottom: 40px;
+}
+
+.brands{
+    width: 735px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 35px;
+    align-items: center;
+    position: relative;
+}
+
+.brands:before{
+    width: 120px; height: 9px;
+    background-position: -2px -2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.brand__item{
+    padding-bottom: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
