@@ -342,7 +342,7 @@ button.owl-dot.active:focus{
 .where-to-buy .container {
 }
 .where-to-buy h3 {
-    padding-bottom: 31px;
+    margin-bottom: 31px;
 }
 .where-to-buy p {
     font-size: 14px;
@@ -377,6 +377,124 @@ button.owl-dot.active:focus{
 .brand__item{
     padding-bottom: 36px;
 }
+
+
+/*-----------------раздел facts about BackeryBo------------*/
+
+.facts {
+    padding-top: 77px;
+    padding-bottom: 61px;
+}
+.facts .container {
+}
+.facts h3 {
+   margin-bottom: 50px; 
+}
+.facts .facts__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 61px;
+}
+.facts .facts__item {
+    width: 150px;
+    padding-top: 90px;
+    position: relative;
+}
+
+.facts__item:before{
+    content: '';
+    position: absolute;
+    background: url(../images/icons/css_sprites_facts.png);
+    width: 60px; height: 60px;;
+    background-position: -67px -2px;;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.facts__item+li:before{
+    width: 55px; height: 55px;
+    background-position: -131px -57px;
+}
+
+.facts__item+li+li:before{
+    width: 61px; height: 51px;
+    background-position: -131px -2px;
+}
+
+.facts__item+li+li+li:before{
+    width: 60px; height: 30px;
+    background-position: -67px -67px;
+    top: 15px;
+}
+
+.facts__item+li+li+li+li:before{
+    width: 61px; height: 57px;
+    background-position: -2px -67px;
+    top: 0;
+}
+
+.facts__item+li+li+li+li+li:before{
+   width: 61px; height: 61px;
+    background-position: -2px -2px;
+}
+
+.facts h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+}
+.facts p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.facts .btn-next-section {
+    background-position: -2px -28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
