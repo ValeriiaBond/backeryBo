@@ -45,7 +45,9 @@ a{
 .arrow-previous, 
 .arrow-next,
 .brands:before,
-.btn-next-section{
+.btn-next-section,
+.coupon__decoration:before,
+.socials__list li>a{
     content: '';
 	background: url(../images/icons/css_sprites.png);
 }
@@ -177,7 +179,7 @@ a{
 .btn-next-section{
     display: block;
     width: 40px; height: 21px;
-    background-position: -46px -28px;
+    background-position: -91px -28px;
     margin: 0 auto;
 }
 
@@ -251,7 +253,7 @@ a{
 .arrow-previous{
 	position: absolute;
 	width: 16px; height: 27px;
-	background-position: -2px -83px;
+	background-position: -2px -98px;
 	top: 50%;
 	left: -56px;
 	transform: translateY(-50%);
@@ -260,7 +262,7 @@ a{
 .arrow-next{
 	position: absolute;
 	width: 16px; height: 27px;
-	background-position: -94px -53px;
+	background-position: -94px -68px;
 	top: 50%;
 	right: -56px;
 	transform: translateY(-50%);
@@ -367,7 +369,7 @@ button.owl-dot.active:focus{
 
 .brands:before{
     width: 120px; height: 9px;
-    background-position: -2px -2px;
+    background-position: -47px -2px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -451,18 +453,235 @@ button.owl-dot.active:focus{
 }
 
 .facts .btn-next-section {
-    background-position: -2px -28px;
+    background-position: -47px -28px;
+}
+
+
+/*-----------раздел get coupon----------*/
+
+.coupon {
+    background-color: #f9f7f7;
+    padding-top: 82px;
+    padding-bottom: 79px;
+}
+.coupon .coupon__body{
+    display: flex;
+    justify-content: space-between;
+}
+.coupon__description {
+    flex-basis: 625px;
+}
+.coupon__description h3 {
+    text-align: left;
+    margin-bottom: 38px;
+}
+.coupon__description p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.35px;
+    padding-bottom: 32px;
+}
+.coupon__description form {
+}
+.coupon__description input[type=email] {
+    display: block;
+    width: 348px;
+    height: 40px;
+    border: 1px solid #000000;
+    padding-left: 21px;
+    margin-bottom: 15px;
+}
+.checkbox{
+    position: relative;
+}
+.checkbox__input{
+   -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox__label{
+    color: #000101;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    padding-left: 38px;
+    cursor: pointer;
+}
+.checkbox__label:before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 1;
+    transition: background .1s ease;
+}
+
+.checkbox__label:after{
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/icons/other/check.svg) no-repeat;
+    background-size: 14px 14px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    z-index: 2;
+    transition: opacity .1s ease;
+}
+
+.checkbox__input:checked + .checkbox__label:before{
+    background-color: #000;
+}
+.checkbox__input:checked + .checkbox__label:after{
+    opacity: 1;
+}
+
+.coupon__description .intro__btn-group {
+    padding-top: 20px;
+}
+.coupon__description .intro__btn {
+    text-align: center;
+    border-color: #000;
+    color: #000;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.coupon__decoration {
+    flex-basis: 445px;
+    box-sizing: border-box;
+    text-align: center;
+    align-self: center;
+    padding: 59px 70px 58px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='7' stroke-dasharray='20%2c 45' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    position: relative
+}
+.coupon__decoration:before{
+    content: '';
+    position: absolute;
+    width: 41px; height: 62px;
+    background-position: -2px -2px;;
+    bottom: 94px;
+    left: -18px;
+}
+
+
+.coupon__decoration p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+}
+
+.coupon__decoration p+p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.35px;
+    margin-top: 40px;
+}
+.coupon__decoration h4 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 100px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+
+.coupon__decoration h4>span{
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 100px;
+}
+
+.coupon__decoration .logo {
+    font-style: 48px;
+    line-height: 36px;
+    color: #000;
+    display: block;
+    text-align: center;
+}
+
+
+/*----------footer--------------*/
+footer{
+    background: url(../images/backgrounds/bg_paper_black.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 57px;
+    padding-bottom: 74px;
+}
+.footer__body{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.footer__text {
+}
+.footer__text .logo {
+    margin-bottom: 25px;
+}
+.footer__text p {
+    font-size: 12px;
+    line-height: 48px;
+    letter-spacing: 0.3px;
+}
+.contacts {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socials {
+    width: 190px;
+}
+.socials h4, .phones h4 {
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+.socials p {
+    line-height: 48px;
+}
+
+
+.socials__list {
+    display: flex;
+}
+.socials__list li{
+    margin-right: 12px;    
+}
+.socials__list li>a {
+    display: block;
+    background-position: -33px -68px;
+    width: 27px; height: 26px;
+}
+.socials__list li+li>a {
+    background-position: -2px -68px;
+}
+.socials__list li+li+li>a {
+    background-position: -64px -68px;
 }
 
 
 
+.phones {
+    width: 170px;
+}
 
-
-
-
-
-
-
+.phones p {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    margin-bottom: 12px;
+}
 
 
 
